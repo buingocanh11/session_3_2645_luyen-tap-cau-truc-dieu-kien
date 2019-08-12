@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng theo doanh số</title>
+</head>
+<body>
+<script>
+    let revenue = Number(prompt("Nhập doanh thu"));
+    let commission;
+    if (revenue>300000000){
+        commission=revenue*0.2;
+    } else if (revenue>100000000){
+        commission=revenue*0.1;
+    } else
+        commission=revenue*0.05;
+    alert("Tiền hoa hồng là " + commission + " VNĐ");
+</script>
+</body>
+</html>
