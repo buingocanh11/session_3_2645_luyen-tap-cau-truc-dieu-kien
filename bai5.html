@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp loại học lực</title>
+</head>
+<body>
+    <script>
+        let DiemKiemTra = Number(prompt("Nhập điểm kiểm tra"));
+        let DiemGiuaKy = Number(prompt("Nhập điểm giữa kỳ"));
+        let DiemCuoiKy = Number(prompt("Nhập điểm cuối kỳ"));
+        let DiemTongKet = (DiemKiemTra + DiemGiuaKy*2 + DiemCuoiKy*3)/6;
+        if (DiemTongKet>=8){
+            alert("Giỏi");
+        } else if(DiemTongKet>=6.5){
+            alert("Khá");
+        } else if(DiemTongKet>=5){
+            alert("Trung bình");
+        } else if(DiemTongKet>=3.5) {
+            alert("Yếu");
+        } else
+            alert("Kém");
+</script>
+</body>
+</html>
