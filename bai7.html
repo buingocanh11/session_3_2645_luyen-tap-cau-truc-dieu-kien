@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cước điện thoại</title>
+</head>
+<body>
+    <script>
+        let minutes= Number(prompt("Nhập số phút đã gọi"));
+        let block50 = 600;
+        let block150 = 400;
+        let block200 = 200;
+        let CuocThuebao = 25000;
+        let money;
+        if (minutes<=50) {
+            money = (CuocThuebao + minutes*block50);
+        } else if(minutes<=150) {
+            money = (CuocThuebao + 50 * block50 + (minutes - 50) * block150);
+        } else
+            money = (CuocThuebao + 50*block50 + 100*block150 +(minutes-150)*block200);
+        alert("Tiền điện thoại nhà bạn là: " + money)
+    </script>
+</body>
+</html>
